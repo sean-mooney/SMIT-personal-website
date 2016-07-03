@@ -1,0 +1,62 @@
+.boxed{
+    display: block;
+    background-color: #676767;
+    position: relative;
+    max-width: 1260px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgba(0,0,0,0.3) 0 0 20px 4px;
+}
+
+.ui-bg-color01{
+    background-color: #4f4f4f;
+}
+.name-font-color{
+    color: #e7e7e7;
+}
+
+.name {
+    padding:17px 40px 18px 40px;
+    min-height:120px;
+    max-height: 120px;
+}
+
+.name-title-color{
+    color: #ffffff;
+}
+
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navigation .photo{
+    min-height: 360px;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+}
+
+.position{
+    color:#efefef;
+}
+.myTitle{
+    background: rgba(0,0,0,0.2);
+    padding: 23px 40px 34px 40px;
+    min-height: 120px;
+    max-height: 120px;
+}
+
+.intro{
+    width: 90%;
+    max-width: 768px;
+}
+.h4_headline{
+    font-size: 24px;
+    line-height:1.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 2px;
+}
