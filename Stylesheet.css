@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.test_bgcolor{
+    background-color: #999;
+}
+div{
+    display: block;
+}
+#top_section{
+    z-index: 1;
+}
+
+.top_section_bg_color{
+    background-color: #4f4f4f;
+}
+
+.profile_image{
+    min-height: 360px;
+}
+
+.nopadding{
+    padding: 0px;
+    margin: 0px;
+}
+
+.name_area_style {
+    padding: 17px 40px 18px 40px;
+    min-height: 120px;
+    max-height: 120px;
+}
+.name_style{
+    margin: 0;
+    font-size: 40px;
+    line-height: 2.1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name_icon_style{
+    background: rgba(0,0,0,0.1);
+    min-height: 120px;
+    max-height: 120px;
+    text-align: center;
+}
+.title_font_color{
+    color: #efefef;
+}
+.title_position{
+    background: rgba(0,0,0,0.2);
+    padding:23px 40px 34px 40px;
+    min-height: 120px;
+    max-height: 120px;
+}
+.title_style{
+    font-size: 24px;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+.title_icon_style{
+    background: rgba(0,0,0,0.3);
+    min-height: 120px;
+    max-height: 120px;
+    text-align: center;
+}
+.navitem_position{
+    min-height: 120px;
+    background: #546543;
+    text-align: center;
+}
+.home_nav_ui_color{
+    background-color: #1abc9c;
+}
+.resume_nav_ui_color{
+    background-color: #3498db;
+}
+
+.contact_nav_ui_color{
+    background-color: #e67e22;
+}
+
+.feedback_nav_ui_color{
+    background-color: #e74c3c ;
+}
+
+ul li{
+   font-size: 13px;
+}
