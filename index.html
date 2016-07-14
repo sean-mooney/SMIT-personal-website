@@ -1,78 +1,379 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- Adding fontAwsome -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Stylesheet.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 </head>
-<body>
+<body class="body_styling">
+<!--Dividing whole page in 3 sections-->
 
-	<header class="navbar-inverse">
-		<div class="container">
-			<nav role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Brand</a>
+<!-- Section 1: TOP Section -->
+<header>
+	<!-- Start of top Section -->
+	<section id="top_section" class="container-fluid nopadding">
+		<!-- bootstrap row1 which will include image, Name, title and Navbar -->
+		<div class="row nopadding top_section_bg_color">
+			<!-- Col for placing the Image -->
+			<div class=" col-md-5 col-lg-4">
+				&nbsp;
+				<!--Place the image here -->
+				<img src="images/1.jpg" class="profile_image" alt="profile image">
+				<!-- End of Profile Image -->
+			</div>
+			<!-- Start: Name,Title and NavBar -->
+			<div class=" col-md-7 col-lg-8 nopadding">
+				<!-- Name Section -->
+				<div class="row nopadding">
+					<!-- Name on the Left side and A icon on the right -->
+					<!--col 10: for Name and col 2: for icon -->
+					<!--col 10: for Name -->
+					<div class="col-md-10 name_area_style">
+						<h2 class="name_style uppercase">SMIT DOSHI</h2>
+					</div>
+					<!--col 2: for icon -->
+					<div class="col-md-2 name_icon_style nopadding">
+						<!-- Add Flaticon here -->
+						<i class="fa fa-download fa-4x" aria-hidden="true"></i>
+					</div>
 				</div>
+				<!-- Title Section -->
+				<div class="row title_font_color">
+					<!-- Title Position on the left side and Icon on the right-->
+					<!--col 10: for Title and col 2: for icon-->
+					<!-- col 10: Title -->
+					<div class="col-md-10 title_position">
+						<h4 class="title_style uppercase">The Experience iOS Application Developer </h4>
+					</div>
+					<!-- col 2: for icon -->
+					<div class="col-md-2 title_icon_style nopadding">
+						<i class="fa fa-behance fa-4x" aria-hidden="true"></i>
+						<!-- Add Flaticon here -->
+					</div>
+				</div>
+				<!-- End of Title -->
+				<!-- End of Name -->
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
+				<!-- Icon Bar having Home, Resume, Contact and Feedback using Navbar -->
+				<!-- Navigation Bar -->
+				<ul class=" row navbar navbar-inverse">
+					<li class="col-xs-4 col-sm-3 nopadding navitem_position home_nav_ui_color">
+						<a href="#" class="icon_anim_sweep">
+
+							<!-- Place the icon here using i tag -->
+							<i class="fa fa-flag fa-4x" aria-hidden="true">
+
+							</i>
+							<span>Home</span>
+						</a>
+					</li>
+					<li class="col-xs-4 col-sm-3 nopadding navitem_position resume_nav_ui_color">
+						<a href="#" class="icon_anim_sweep">
+
+							<!-- Place the icon here using i tag -->
+							<i class="fa fa-graduation-cap fa-4x" aria-hidden="true">
+
+							</i>
+						</a>
+						<span>Resume</span>
+					</li>
+					<li class="col-xs-4 col-sm-3 nopadding navitem_position contact_nav_ui_color">
+						<a href="#" class="icon_anim_sweep">
+
+							<!-- Place the icon here using i tag -->
+							<i class="fa fa-map-marker fa-4x" aria-hidden="true">
+
+							</i>
+						</a>
+						<span>Contact</span>
+					</li>
+					<li class="col-xs-4 col-sm-3 nopadding navitem_position feedback_nav_ui_color">
+						<a href="#" class="icon_anim_sweep">
+
+							<!-- Place the icon here using i tag -->
+							<i class="fa fa-comment fa-4x" aria-hidden="true">
+
+							</i>
+						</a>
+						<span>Feedback</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</header>
+<!-- Section 2: Mid Section (Boday) -->
+
+<div class="content-wrap">
+	<!-- Start -->
+	<section id="mid_section" class="container-fluid nopadding">
+		<div class="row nopadding mid_section_bg_color">
+			<!-- About Me on the Left Side -->
+			<div class="col-md-8 nopadding" style="height: 402px">
+				<div class="about_me_padding fade_in_down_anim">
+					<div class="row">
+						<!-- About Me Title -->
+						<div class="col-md-12 nopadding">
+							<h3 class="font-accident-two-normal uppercase">About me</h3>
+							<div class="quote">
+								<h5 class="font-accident-one-bold uppercase subtitle">
+									Passion for Software Development and always willing to Learn  more..
+								</h5>
+								<div class="white_line_about_me"></div>
+							</div>
+
+							<div class="row nopadding">
+								<!--Write your skills here -->
+								<!-- Skill 1 Section -->
+								<div class="col-md-6">
+									<!-- row for making Icon and Skill title -->
+									<div class="row">
+										<!-- Icon Area -->
+										<div class=" col-sm-2 skill-icon">
+											<!-- icon img src -->
+										</div>
+										<!-- Skill title Area -->
+										<div class="col-sm-10">
+											<!-- row for Tilte Section and Skill bar -->
+											<div class="row">
+												<!-- Skill Title -->
+												<div class="col-sm-12 skill-title">HTML 5</div>
+												<!-- Skill Bar -->
+												<div class="col-sm-12 skill-bar">
+													<div class="skill_html5_bar_ninety skill_html5_bar"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End of Skill Section 1 -->
+								<!-- Skill Section 2 -->
+								<div class="col-md-6">
+									<!-- row for making Icon and Skill title -->
+									<div class="row">
+										<!-- Icon Area -->
+										<div class=" col-sm-2 skill-icon">
+											<!-- icon img src -->
+										</div>
+										<!-- Skill title Area -->
+										<div class="col-sm-10">
+											<!-- row for Tilte Section and Skill bar -->
+											<div class="row">
+												<!-- Skill Title -->
+												<div class="col-sm-12 skill-title">CSS</div>
+												<!-- Skill Bar -->
+												<div class="col-sm-12 skill-bar">
+													<div class="skill_html5_bar_ninety skill_html5_bar"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End of Skill Section 2 -->
+
+								<!-- End of Skills -->
+							</div>
+							<!-- End of About Me -->
 						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</header>
+					</div>
+				</div>
+			</div>
+			<!-- Personal Info on Right-->
+			<div class="row col-md-4 nopadding personal_ui_bg_color">
+
+				<div class="personal_info_padding">
+					<h3 class="font-accident-two-normal uppercase">Personal Info</h3>
+					<div class="white_line_personal_info"></div>
+
+					<div>
+						<!-- Name Area -->
+						<div class="width_personal_info">
+							<!-- Notion of Labels -->
+							<div class="left_labels_personal_info">
+								<div class="small uppercase">Name:</div>
+							</div>
+							<!-- Your Information -->
+							<div class="area_personal_info">
+								<p class="small">SMIT DOSHI</p>
+							</div>
+						</div>
+						<!-- Name Area End -->
+
+						<!-- Date Of Birth Area -->
+						<div class="width_personal_info">
+							<!-- Notion of Labels -->
+							<div class="left_labels_personal_info">
+								<div class="small uppercase">Date of Birth:</div>
+							</div>
+							<!-- Your Information -->
+							<div class="area_personal_info">
+								<p class="small">02/06/1992</p>
+							</div>
+						</div>
+						<!-- DOB Area End -->
+
+						<!-- Address Area -->
+						<div class="width_personal_info">
+							<!-- Notion of Labels -->
+							<div class="left_labels_personal_info">
+								<div class="small uppercase">Address:</div>
+							</div>
+							<!-- Your Information -->
+							<div class="area_personal_info">
+								<p class="small">444 Gregory St, Bridgeport, CT-06604</p>
+							</div>
+						</div>
+						<!-- Address Area End -->
+
+						<!-- Phone Area -->
+						<div class="width_personal_info">
+							<!-- Notion of Labels -->
+							<div class="left_labels_personal_info">
+								<div class="small uppercase">Phone:</div>
+							</div>
+							<!-- Your Information -->
+							<div class="area_personal_info">
+								<p class="small">424-999-2546</p>
+							</div>
+						</div>
+						<!-- Phone Area End -->
+
+						<!-- Email ID Area -->
+						<div class="width_personal_info">
+							<!-- Notion of Labels -->
+							<div class="left_labels_personal_info">
+								<div class="small uppercase">Email:</div>
+							</div>
+							<!-- Your Information -->
+							<div class="area_personal_info">
+								<p class="small">smdoshi@my.bridgeport.edu</p>
+							</div>
+						</div>
+						<!-- Email ID Area End -->
+						<div class="white_line_about_me"></div>
+					</div>
+				</div>
+				<!-- End of Personal Info -->
+			</div>
+		</div>
+	</section>
+
 </div>
-<div class="container">
-	<div class="row">
-		<div class="darkBG col-sm-6 col-xs-12">test1</div>
-		<div class="darkerBG col-sm-3 col-xs-6">test2</div>
-		<div class="darkestBG col-sm-3 col-xs-6">test3</div>
+
+<!-- SECTION 3: Bottom Section -->
+<!-- Professional Experience and Projects -->
+
+<!-- After About ME Part -->
+<div class="row nopadding professional_ui_bg_color">
+	<!-- My Professional Experience Start-->
+	<div class="col-md-4 nopadding prof_exp" style="height: 473px">
+		<div class="prof_exp_padding">
+			<h3 class="font-accident-two-normal uppercase">Pro. Experience</h3>
+			<div class="prof_exp_spacing"></div>
+			<!-- Experience Area Start -->
+			<div class="prof_exp_area">
+				<!-- Start of Prof Exp1 -->
+				<ul>
+					<!-- Exp. Date -->
+					<li class="prof_exp_date">08/2015 - Present</li>
+					<!-- Company Name and A dot Styling -->
+					<li class="prof_comp_name uppercase">
+						<!-- Creation of White DOT -->
+						<a>
+
+							Whalstrom Library University of Bridgeport.
+						</a>
+					</li>
+					<!-- Postion Title Name -->
+					<li class="prof_pos_title">Library Network IT Asssistant</li>
+				</ul>
+				<div class="white_line_about_me"></div>
+				<!-- End of Prof Exp 1 -->
+
+				<!-- Start of Prof Exp 2 -->
+				<ul>
+					<!-- Exp. Date -->
+					<li class="prof_exp_date">03/2013 - 04/2013</li>
+					<!-- Company Name and A dot Styling -->
+					<li class="prof_comp_name uppercase">
+						<!-- Creation of White DOT -->
+						<a>
+							Tata Technologies.
+						</a>
+					</li>
+					<!-- Postion Title Name -->
+					<li class="prof_pos_title">Summer Internship | Ethical Hacking and Network Defense.</li>
+				</ul>
+				<!-- End of Prof Exp 2 -->
+			</div>
+			<!-- Experience Area End -->
+		</div>
 	</div>
+	<!-- My Prof Exp END -->
+	<!-- Portfolio Start -->
+	<div class="col-md-8 nopadding project_bg_color" style="height: 473px">
+		<div class="project_padding_50">
+			<h3 class="font-accident-two-normal uppercase"> MY PROJECTS</h3>
+			<div class="project_line"></div>
+			<div class="row">
+				<!-- Here we will be showing our 3 projects -->
+				<!-- Project 1 Start -->
+				<div class="col-sm-4 nopadding">
+					<div>
+						<!-- Project icon -->
+					</div>
+					<h4 class="font-accident-one-normal uppercase">Project Name1</h4>
+					<p class="font-regular-normal">
+						Description of Project.
+					</p>
+
+					<a href="#!" class="btn btn-wh-trans btn-xs">Link to Github</a>
+
+				</div>
+				<!-- Project 1 END -->
+				<!-- Project 2 Start -->
+				<div class="col-sm-4 nopadding">
+					<div>
+						<!-- Project icon -->
+					</div>
+					<h4 class="font-accident-one-normal uppercase">Project Name2</h4>
+					<p class="font-regular-normal">
+						Description of Project.
+					</p>
+
+					<a href="#!" class="btn btn-wh-trans btn-xs">Link to Github</a>
+
+				</div>
+				<!-- Project 2 END -->
+				<!-- Project 3 Start -->
+				<div class="col-sm-4 nopadding">
+					<div>
+						<!-- Project icon -->
+					</div>
+					<h4 class="font-accident-one-normal uppercase">Project Name3</h4>
+					<p class="font-regular-normal">
+						Description of Project.
+					</p>
+
+					<a href="#!" class="btn btn-wh-trans btn-xs">Link to Github</a>
+				</div>
+				<!-- Project 3 END -->
+			</div>
+
+
+		</div>
+
+	</div>
+	<!-- Protfolio End -->
 </div>
+<!-- End -->
+
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
